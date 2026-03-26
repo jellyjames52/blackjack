@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- App Identity -->
+    <key>CFBundleName</key>
+    <string>BJ Trainer</string>
+    <key>CFBundleDisplayName</key>
+    <string>Blackjack Trainer</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.yourname.bjtrainer</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+
+    <!-- LANDSCAPE LOCK — critical for App Store -->
+    <!-- iPhone: only landscape -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+
+    <!-- iPad: only landscape -->
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+
+    <!-- Fullscreen required (disables slide-over / split view) -->
+    <key>UIRequiresFullScreen</key>
+    <true/>
+
+    <!-- Hide status bar for immersive table -->
+    <key>UIStatusBarHidden</key>
+    <false/>
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <false/>
+    <key>UIStatusBarStyle</key>
+    <string>UIStatusBarStyleLightContent</string>
+
+    <!-- No camera, no microphone, no location needed -->
+    <!-- Privacy manifest: no data collection -->
+
+    <!-- App category hint (set in App Store Connect as Education) -->
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.education</string>
+
+    <!-- Launch screen storyboard name -->
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+
+    <!-- Scene support -->
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <false/>
+    </dict>
+
+    <!-- App uses SwiftUI lifecycle -->
+    <key>UIApplicationDelegateClassName</key>
+    <string>$(PRODUCT_MODULE_NAME).AppDelegate</string>
+</dict>
+</plist>
